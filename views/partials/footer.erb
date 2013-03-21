@@ -1,0 +1,22 @@
+<aside id="footer">
+  <div class="constrain">
+    <div class="logo">
+      <%= logo %>
+    </div>
+
+    <div class="footerText">
+      <p class="copyright">
+        <%= copyright_notice %>
+      </p>
+
+      <nav>
+        <ul class="piped">
+          <% @nav_links['All'].each do |link| %>
+            <li><%= link_to link['text'], link['url'], title: link['title'] %></li>
+          <% end %>
+        </ul>
+      </nav>
+
+    </div>
+  </div>
+</aside>

@@ -1,0 +1,34 @@
+<article>
+  <section>
+
+    <p>
+      Either way, this page doesn't exist. Sorry about that!
+    </p>
+
+    <p>
+      Maybe these links can help:
+    </p>
+
+    <nav>
+      <dl class="navigational">
+        <dt>Global navigation</dt>
+
+        <% @nav_links['All'].each do |link| %>
+          <dd><%= link_to link['text'], link['url'], title: link['title'] %></dd>
+        <% end %>
+      </dl>
+    </nav>
+  </section>
+</article>
+
+<article>
+  <section>
+
+<script>
+  var GOOG_FIXURL_LANG = (navigator.language || '').slice(0,2),GOOG_FIXURL_SITE = location.host;
+</script>
+
+<script src="http://linkhelp.clients.google.com/tbproxy/lh/wm/fixurl.js"></script>
+
+  </section>
+</article>

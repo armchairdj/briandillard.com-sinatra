@@ -1,0 +1,21 @@
+<article>
+  <section>
+    <dl class="navigational">
+      <% @links.each_pair do |name, items| %>
+        <% links = items.delete_if { |i| i["active"] == false } %>
+
+        <% unless links.empty? %>
+
+          <%= content_tag(:dt, name) %>
+
+          <% links.each do |link| %>
+            <% content_tag(:dd) do %>
+              <%= link_to link["name"], link["url"], :title => "check out my #{link['description']} on #{link['name']} " %>
+            <% end %>
+          <% end %>
+
+        <% end %>
+      <% end %>
+    </dl>
+  </section>
+</article>

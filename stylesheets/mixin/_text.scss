@@ -1,0 +1,14 @@
+@mixin headline-font {
+  font-family: "liberation-sans-1","liberation-sans-2", Helvetica, sans-serif;
+  //font-family: "prenton-1", "prenton-2", Helvetica, sans-serif;
+  font-weight: bold;
+  color: $hexHeadlineText;
+}
+
+@mixin body-font {
+  font-family: "liberation-sans-1","liberation-sans-2", Helvetica, sans-serif;
+  //font-family: "minion-pro-1", "minion-pro-2", Georgia, serif;
+  font-weight: normal;
+  color: $hexBodyText;
+  line-height: $readable;
+}

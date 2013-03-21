@@ -1,0 +1,45 @@
+#container #footer {
+  width: 100%;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  @include gradient-background($hexMastheadBg0, $hexMastheadBg1);
+  padding: 2em 0;
+  font-size: 90%;
+  color: #000;
+
+  .copyright {
+    margin: -4.5em 0 1em;
+    color: #fff;
+    font-size: 0.75em;
+  }
+
+  nav {
+    color: $hexBodyBg;
+    text-transform: uppercase;
+    letter-spacing: 0.1em;
+    font-size: 0.75em;
+  }
+
+  p span {
+    white-space: nowrap;
+  }
+
+  a {
+    color: #000;
+    display: inline-block;
+    padding: 2px;
+    @include underlined-link;
+    line-height: 1.5;
+
+    &:hover,
+    &:active {
+      background-color: #000;
+      color: #fff;
+    }
+  }
+
+  .logo {
+    display: none;
+  }
+}

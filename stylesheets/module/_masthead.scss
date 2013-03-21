@@ -1,0 +1,63 @@
+#container #masthead {
+  font-size: 40px;
+
+  nav {
+    background-color: $white;
+    padding: .75em 0 0;
+    position: relative;
+    margin-bottom: 2em;
+
+    .tagline {
+
+      ul {
+        position: absolute;
+        color: $black;
+        font-size: 16px;
+
+        li {
+          a {
+            display: inline-block;
+            padding: .5em 1em;
+            color: $white;
+            background-color: #444;
+            @include border-radius(0 0 6px 6px);
+
+            &:active,
+            &:hover {
+              padding: .5em 1em 1em;
+            }
+          }
+        }
+      }
+
+      p {
+        color: $black;
+        font-size: .5em;
+        line-height: 1.1em;
+        font-weight: bold;
+        white-space: nowrap;
+
+        span {
+          font-size: 2.2em;
+          color: #7b99c0;
+        }
+      }
+    }
+  }
+
+  header {
+    margin-bottom: 1em;
+
+    h1 {
+      line-height: 1;
+      font-size: .6em;
+      text-transform: uppercase;
+      letter-spacing: .2em;
+    }
+
+    h2 {
+      font-size: .5em;
+      line-height: 1;
+    }
+  }
+}

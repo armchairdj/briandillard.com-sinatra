@@ -1,0 +1,186 @@
+/***** Lists: Totally stripped down *****/
+
+@mixin stripped-list {
+  li {
+    float: none;
+    @include unpiped-li;
+  }
+}
+
+/***** Lists: Piped *****/
+
+@mixin piped-list {
+  line-height: $readable;
+
+  li {
+    display: inline-block;
+
+    &:after {
+      content: "|";
+      display: inline-block;
+      margin: 0 6px 0 10px;
+    }
+
+    &:last-child:after {
+      content: "";
+    }
+  }
+}
+
+@mixin fancy-piped-list {
+  @include piped-list;
+
+  li:after {
+    content: "\00A0\00A0|\00A0";
+  }
+}
+
+/* To cancel piping */
+
+@mixin unpiped-li {
+  border-right: 0;
+  margin-right: 0;
+  padding-right: 0;
+}
+
+/***** Lists: Indented *****/
+
+@mixin indented-list {
+  padding: 0 0 0 1em;
+
+  li {
+    padding: 0 0 5px;
+  }
+}
+
+/***** Lists: Bulleted *****/
+
+@mixin bulleted-list {
+  padding: 0 0 0 1em;
+  margin: 0 0 10px;
+
+  li {
+    padding-left: .35em;
+    list-style-type: square;
+  }
+}
+
+/***** Lists: Numbered *****/
+
+@mixin numbered-list {
+  list-style-type: decimal;
+  list-style-position: outside;
+  padding-left: 2.5em;
+
+  li {
+    list-style-type: decimal;
+    list-style-position: outside;
+    margin: 0 0 10px;
+  }
+}
+
+/***** Lists: Navigation links *****/
+
+@mixin navigational-list-margin($margin) {
+  margin-left: $margin;
+  margin-right: $margin;
+}
+
+@mixin navigational-list {
+  line-height: 2.2;
+  border-bottom: 2px solid white;
+
+  dt {
+    @include headline-font;
+    background-color: #ccc;
+    padding: 0 .6em;
+
+    border-top: 2px solid white;
+    border-bottom: 2px solid white;
+
+    margin-top: -2px;
+
+    &:first-child {
+      margin-top: 0;
+    }
+
+    &:last-child {
+      border-bottom: 0;
+    }
+  }
+
+  dd,
+  li {
+    border-bottom: 2px solid #ddd;
+
+    &:last-child {
+      border-bottom: 0;
+    }
+
+    a {
+      padding: 0 .6em;
+      display: block;
+      line-height: 2;
+      background-color: #eee;
+
+      &:hover,
+      &:active {
+        background-color: transparent;
+        color: $hexLinkPrimary;
+      }
+    }
+
+    &.standout a {
+      @include action-link-horizontal;
+      font-weight: bold;
+    }
+  }
+}
+
+/***** Definition lists: Indented *****/
+
+@mixin linear-definition-list {
+  margin-bottom: 0;
+
+  &:last-child {
+    margin-bottom: -.5em;
+  }
+
+  > dt {
+    font-weight: bold;
+    margin: 0 0 .5em;
+  }
+
+  > dd {
+    margin: -.5em 0 .5em;
+  } 
+}
+
+@mixin formatted-definition-list($termWidth: 30%) {
+  $definitionWidth: 95% - $termWidth;
+
+  @include clearfix;
+
+  margin-bottom: 0;
+
+  &:last-child {
+    margin-bottom: -1em;
+  }
+
+  > dt,
+  > dd {
+    float: left;
+  }
+
+  > dt {
+    clear: left;
+    font-weight: bold;
+    width: $termWidth;
+    margin: 0 0 1em;
+  }
+
+  > dd {
+    width: $definitionWidth;
+    margin: 0 0 1em .5em;
+  }
+}

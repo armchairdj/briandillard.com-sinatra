@@ -1,0 +1,13 @@
+#container {
+  min-height: 100%;
+  position: relative;
+
+  .constrain {
+    margin: 0 auto;
+  }
+
+  #inner {
+    background-color: $hexBodyBg;
+    padding-bottom: 12em;
+  }
+}

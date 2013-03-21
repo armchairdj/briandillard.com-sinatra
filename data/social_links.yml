@@ -1,0 +1,97 @@
+"Programming":
+  - { "name": "GitHub",
+      "url": "http://github.com/armchairdj",
+      "description": "code" }
+  - { "name": "Stack Overflow",
+      "url": "http://stackoverflow.com/users/1518589/armchairdj",
+      "description": "discussions" }
+  - { "name": "JS.Chi()",
+      "url": "http://www.meetup.com/js-chi/members/8539794/",
+      "description": "meetups" }
+  - { "name": "Slideshare",
+      "url": "http://www.slideshare.net/bdillard",
+      "description": "slides" }
+  - { "name": "Agile Ajax",
+      "url": "http://www.pathf.com/blogs/author/brian-dillard/",
+      "description": "defunct programming blog",
+      "active": false }
+  - { "name": "IBM DeveloperWorks",
+      "url": "http://www.ibm.com/developerworks/views/web/libraryview.jsp?sort_by=&show_abstract=true&show_all=&search_flag=&contentarea_by=All+Zones&search_by=Brian+Dillard&product_by=All++Products&topic_by=All++Topics&industry_by=All++Industries&type_by=All++Types&ibm-search=Search",
+      "description": "programming tutorials",
+      "active": false }
+  - { "name": "Really Simple History",
+      "url": "http://code.google.com/p/reallysimplehistory/",
+      "description": "dormant open-source project",
+      "active": false }
+
+"Writing":
+  - { "name": "Armchair DJ",
+      "url": "http://www.armchair-dj.com",
+      "description": "music website",
+      "active": false }
+  - { "name": "Plastikfan",
+      "url": "http://www.plastikfan.org",
+      "description": "fan site",
+      "active": false }
+  - { "name": "Tumblr",
+      "url": "http://armchairdj.tumblr.com/",
+      "description": "dormant tumblog",
+      "active": false }
+
+"Social":
+  - { "name": "FriendFeed",
+      "url": "http://friendfeed.com/armchairdj",
+      "description": "activity stream" }
+  - { "name": "LinkedIn",
+      "url": "http://www.linkedin.com/in/briandillard",
+      "description": "professional profile" }
+  - { "name": "App.net",
+      "url": "http://alpha.app.net/armchairdj",
+      "description": "posts" }
+  - { "name": "Twitter",
+      "url": "http://twitter.com/armchairdj",
+      "description": "posts" }
+  - { "name": "Google Plus",
+      "url": "http://www.google.com/profiles/armchairdj",
+      "description": "profile" }
+  - { "name": "Facebook",
+      "url": "http://www.facebook.com/brian.j.dillard",
+      "description": "profile" }
+  - { "name": "Myspace",
+      "url": "http://www.myspace.com/armchairdj",
+      "description": "profile" }
+  - { "name": "EveryBlock",
+      "url": "http://chicago.everyblock.com/users/140098/",
+      "description": "profile" }
+  - { "name": "Yelp",
+      "url": "http://armchairdj.yelp.com/",
+      "description": "local reviews" }
+  - { "name": "Viewpoints",
+      "url": "http://www.viewpoints.com/aboutme/armchairdj",
+      "description": "product reviews" }
+  - { "name": "Disqus",
+      "url": "http://disqus.com/armchairdj/",
+      "description": "discussions",
+      "active": false }
+  - { "name": "Quora",
+      "url": "http://qr.ae/1tSG5",
+      "description": "discussions",
+      "active": false }
+
+"Media":
+  - { "name": "Flickr",
+      "url": "http://www.flickr.com/photos/armchairdj/",
+      "description": "photos" }
+  - { "name": "Last FM",
+      "url": "http://www.last.fm/user/armchairdj/",
+      "description": "music selections" }
+  - { "name": "Shelfari",
+      "url": "http://www.shelfari.com/armchairdj",
+      "description": "book selections" }
+  - { "name": "Amazon",
+      "url": "http://www.amazon.com/registry/wishlist/5JA1NMO4AOW4",
+      "description": "wish lists" }
+  - { "name": "Readernaut",
+      "url": "http://readernaut.com/armchairdj/timeline/books/",
+      "description": "book selections",
+      "active": false }

@@ -1,0 +1,87 @@
+blockquote,
+dl,
+ol,
+ul,
+p {
+  margin: 0;
+  padding: 0;
+}
+
+article {
+  margin-bottom: 1em;
+  line-height: $spacious;
+
+  &:last-child {
+    margin-bottom: 0;
+  }
+
+  header,
+  section {
+    margin-bottom: .75em;
+
+    &:last-child {
+      margin-bottom: 0;
+    }
+  }
+
+  p img {
+    display: block;
+    float: left;
+    margin: 0 .5em .5em 0;
+  }
+
+  blockquote,
+  dl,
+  ol,
+  ul,
+  p {
+    margin-bottom: 1em;
+
+    span.dropCap {
+      text-transform: uppercase;
+      float: left;
+      font-size: 2.75em;
+      line-height: 1;
+      font-weight: bold;
+      padding: 0 10px 0 0;
+      @include headline-font;
+    }
+
+    &:last-child {
+      margin-bottom: 0;
+    }
+  }
+}
+
+.str {
+  text-decoration: line-through;
+}
+
+blockquote {
+  padding-left: 2em;
+}
+
+strong,
+.strong {
+  font-weight: bold;
+}
+
+em,
+.em {
+  font-style: italic;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  @include headline-font;
+  margin: 0 0 $emHeadlineBottomMargin;
+  font-size: 1em;
+
+  &:last-child {
+    margin-bottom: 0;
+  }
+}

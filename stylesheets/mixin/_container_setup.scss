@@ -1,0 +1,25 @@
+@mixin container-setup($viewport, $containerPad, $sidebar: 0) {
+  $fullWidth: $viewport - (2 * $containerPad);
+  $listPad: if($sidebar == 0, (-1 * $containerPad), 0);
+
+  dl.navigational,
+  ul.navigational {
+    @include navigational-list-margin($listPad);
+  }
+
+  #container {
+    .constrain {
+      width: $fullWidth;
+    }
+
+    #inner {
+      padding-left: $containerPad;
+      padding-right: $containerPad;
+
+      #main {
+        width: $fullWidth - $sidebar;
+        padding-right: $sidebar;
+      }
+    }
+  }
+}

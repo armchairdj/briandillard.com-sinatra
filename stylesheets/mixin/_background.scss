@@ -1,0 +1,65 @@
+
+@mixin standard-bg-image($url, $vOffset: 0, $hOffset: 0) {
+  background-image: $url;
+  background-position: $hOffset $vOffset;
+  background-repeat: no-repeat;
+}
+
+@mixin fancy-bg-image-base($width, $height) {
+  content: ' ';
+  position: absolute;
+  display: block;
+  width: $width;
+  height: $height;
+  background-size: $width $height;
+  border: 1px solid #666;
+  @include border-radius(12px);
+  @include box-shadow(rgba(0, 0, 0, 0.5) 0 16px 40px);
+}
+
+@mixin fancy-bg-image-right($url, $width, $height, $widthContainer, $extraPad: 0, $vOffset: 0, $hOffset: 0) {
+  position: relative;
+  width: $widthContainer;
+  padding-right: $width + $extraPad;
+
+  &:after {
+    right: 0;
+    top: .5em;
+    @include fancy-bg-image-base($width, $height);
+    @include standard-bg-image($url, $vOffset, $hOffset);
+  }
+}
+
+@mixin fancy-bg-image-left($width, $height, $url, $extraPad: 0, $vOffset: 0, $hOffset: 0) {
+  position: relative;
+  padding-left: $width + $extraPad;
+
+  &:before {
+    left: 0;
+    top: .5em;
+    @include fancy-bg-image-base($width, $height);
+    @include standard-bg-image($url, $vOffset, $hOffset);
+  }
+}
+
+@mixin fancy-bg-image-top($width, $height, $url, $extraPad: 0, $vOffset: 0, $hOffset: 0) {
+  position: relative;
+  padding-top: $height + $extraPad;
+
+  &:before {
+    top: 0;
+    @include fancy-bg-image-base($width, $height);
+    @include standard-bg-image($url, $vOffset, $hOffset);
+  }
+}
+
+@mixin fancy-bg-image-bottom($width, $height, $url, $extraPad: 0, $vOffset: 0, $hOffset: 0) {
+  position: relative;
+  padding-top: $height + $extraPad;
+
+  &:before {
+    bottom: 0;
+    @include fancy-bg-image-base($width, $height);
+    @include standard-bg-image($url, $vOffset, $hOffset);
+  }
+}

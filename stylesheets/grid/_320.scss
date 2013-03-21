@@ -1,0 +1,6 @@
+$viewport: 320px;
+
+body {
+  font-size: 24px;
+  @include container-setup($viewport, $pxContainerPadSmall);
+}

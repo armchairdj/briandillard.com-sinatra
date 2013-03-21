@@ -1,0 +1,35 @@
+$viewport: 768px;
+
+body {
+  @include container-setup($viewport, $pxContainerPadLarge, 288px);
+
+  &.resume {
+    @include container-setup($viewport, $pxContainerPadLarge);
+  }
+
+  #container #masthead {
+    font-size: 80px;
+
+    nav {
+      margin-bottom: 1.25em;
+
+      .tagline {
+        p {
+          text-align: right;
+        }
+      }
+    }
+  }
+
+  #inner {
+    font-size: 28px;
+  }
+}
+
+.phantasm {
+  @include fancy-bg-image-right(url('/img/phantasm.jpg'), 250px, 158px, 420px, 38px);
+}
+
+.monument {
+  @include fancy-bg-image-right(url('/img/monument.jpg'), 250px, 153px, 420px, 38px);
+}

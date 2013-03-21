@@ -1,0 +1,28 @@
+"All":
+  - { "text": "home",
+      "url": "/",
+      "title": "back to the homepage" }
+  - { "text": "bio",
+      "url": "/bio",
+      "title": "an illustrated guide to me" }
+  - { "text": "hire me",
+      "url": "/hire_me",
+      "title": "how to hire me" }
+  - { "text": "resume",
+      "url": "/resume",
+      "title": "my professional life" }
+  - { "text": "software",
+      "url": "/software",
+      "title": "the tools of my trade" }
+  - { "text": "projects",
+      "url": "/projects",
+      "title": "my social networks and projects" }
+  - { "text": "links",
+      "url": "/links",
+      "title": "my favorite content" }
+  - { "text": "tattoos",
+      "url": "/tattoo",
+      "title": "my tattoo collection" }
+  - { "text": "contact",
+      "url": "/contact",
+      "title": "get in touch with me" }

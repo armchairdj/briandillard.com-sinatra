@@ -1,0 +1,30 @@
+a {
+  color: $hexLinkPrimary;
+  @include hover-link;
+}
+
+a:focus {
+  outline: thin dotted;
+}
+
+a[href='#']:focus {
+  outline: none;
+}
+
+a:visited {
+  color: $hexLinkPrimary;
+}
+
+a:hover,
+a:active {
+  color: $hexLinkPrimaryHover;
+  outline: 0;
+}
+
+a.actionLinkVertical {
+  @include action-link-vertical;
+}
+
+a.actionLinkHorizontal {
+  @include action-link-horizontal;
+}

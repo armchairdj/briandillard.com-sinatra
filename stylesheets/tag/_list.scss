@@ -1,0 +1,55 @@
+/***** Lists *****/
+
+ul,
+ol,
+dl,
+dt,
+dd,
+li {
+  margin: 0;
+  padding: 0;
+}
+
+li {
+  list-style: none;
+  list-style-image: none;
+}
+
+/* Unordered list styles */
+
+ol.numbered {
+  @include numbered-list;
+}
+
+ul.stripped {
+  @include stripped-list;
+}
+
+ul.piped {
+  @include piped-list;
+}
+
+ul.fancy {
+  @include fancy-piped-list;
+}
+
+ul.indented {
+  @include indented-list;
+}
+
+ul.bulleted {
+  @include bulleted-list;
+}
+
+dl.navigational,
+ul.navigational {
+  @include navigational-list;
+}
+
+dl.formatted {
+  @include formatted-definition-list;
+}
+
+dl.linear {
+  @include linear-definition-list;
+}

@@ -1,0 +1,100 @@
+/***** Links: Always underlined *****/
+
+@mixin underlined-link {
+  text-decoration: underline;
+
+  &:hover,
+  &:active {
+    cursor: pointer;
+    text-decoration: underline;
+  }
+}
+
+/***** Links: Underlined only on hover *****/
+
+@mixin hover-link {
+  text-decoration: none;
+  &:hover,
+  &:active {
+    cursor: pointer;
+    text-decoration: underline;
+  }
+}
+
+/***** Links: Never underlined *****/
+
+@mixin stripped-link {
+  text-decoration: none;
+  &:hover,
+  &:active {
+    cursor: pointer;
+    text-decoration: none;
+  }
+}
+
+/***** Arrow link building blocks *****/
+
+@mixin arrow-base {
+  @include stripped-link;
+
+  &:hover span,
+  &:active span {
+    text-decoration: underline;
+  }
+}
+
+@mixin left-arrow($heavy: false) {
+  @include arrow-base;
+
+  &:before {
+    content: if($heavy == true, "\2190\25C2", "\2190\00A0");
+  }
+}
+
+@mixin right-arrow($heavy: false) {
+  @include arrow-base;
+
+  &:after {
+    content: if($heavy == true, "\00A0\25B8", "\00A0\2192");
+  }
+}
+
+@mixin up-arrow($heavy: false) {
+  @include arrow-base;
+
+  &:after {
+    content: if($heavy == true, "\00A0\25B2", "\00A0\2191");
+  }
+}
+
+@mixin down-arrow($heavy: false) {
+  @include arrow-base;
+
+  &:after {
+    content: if($heavy == true, "\00A0\25BC", "\00A0\2193");
+  }
+}
+
+/***** Links: Down and up arrows to indicate open/closed state *****/
+
+@mixin action-link-vertical($heavy: false) {
+  @include down-arrow($heavy);
+
+  &.active {
+    @include up-arrow($heavy);
+  }
+}
+
+/***** Links: Right and left arrows to indicate open/closed state *****/
+
+@mixin action-link-horizontal($heavy: false) {
+  @include right-arrow($heavy);
+
+  &.active {
+    @include left-arrow($heavy);
+
+    &:after {
+      content: "";
+    }
+  }
+}
