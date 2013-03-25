@@ -41,11 +41,6 @@ ul.bulleted {
   @include bulleted-list;
 }
 
-dl.navigational,
-ul.navigational {
-  @include navigational-list;
-}
-
 dl.formatted {
   @include formatted-definition-list;
 }

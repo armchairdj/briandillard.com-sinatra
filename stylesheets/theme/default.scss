@@ -10,6 +10,7 @@
 @import "../mixin/clearfix";
 @import "../mixin/container_setup";
 @import "../mixin/gradient";
+@import "../mixin/layout";
 @import "../mixin/link";
 @import "../mixin/list";
 @import "../mixin/text";
@@ -19,11 +20,10 @@
 @import "../tag/list";
 @import "../tag/text";
 
-@import "../grid/grid";
-
 @import "../module/container";
 @import "../module/footer";
 @import "../module/main";
 @import "../module/masthead";
+@import "../module/resume";
 
-@import "../page/resume";
+@import "../grid/grid";

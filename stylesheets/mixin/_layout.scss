@@ -1,0 +1,7 @@
+@mixin sensible-bottom-margin($length) {
+  margin-bottom: $length;
+
+  &:last-child {
+    margin-bottom: 0;
+  }
+}

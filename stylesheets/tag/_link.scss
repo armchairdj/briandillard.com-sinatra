@@ -1,5 +1,5 @@
 a {
-  color: $hexLinkPrimary;
+  color: $hexGlobalHighlight;
   @include hover-link;
 }
 
@@ -12,19 +12,11 @@ a[href='#']:focus {
 }
 
 a:visited {
-  color: $hexLinkPrimary;
+  color: $hexGlobalHighlight;
 }
 
 a:hover,
 a:active {
-  color: $hexLinkPrimaryHover;
+  color: $hexGlobalHighlight;
   outline: 0;
-}
-
-a.actionLinkVertical {
-  @include action-link-vertical;
-}
-
-a.actionLinkHorizontal {
-  @include action-link-horizontal;
 }

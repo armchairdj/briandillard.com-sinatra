@@ -2,9 +2,4 @@ $viewport: 480px;
 
 body {
   @include container-setup($viewport, $pxContainerPadSmall);
-
-  #container #masthead {
-    font-size: 60px;
-  }
 }
-

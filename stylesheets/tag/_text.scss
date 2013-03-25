@@ -8,20 +8,12 @@ p {
 }
 
 article {
-  margin-bottom: 1em;
   line-height: $spacious;
-
-  &:last-child {
-    margin-bottom: 0;
-  }
+  @include sensible-bottom-margin(1em);
 
   header,
   section {
-    margin-bottom: .75em;
-
-    &:last-child {
-      margin-bottom: 0;
-    }
+    @include sensible-bottom-margin(1em);
   }
 
   p img {
@@ -35,7 +27,7 @@ article {
   ol,
   ul,
   p {
-    margin-bottom: 1em;
+    @include sensible-bottom-margin(1em);
 
     span.dropCap {
       text-transform: uppercase;
@@ -45,10 +37,6 @@ article {
       font-weight: bold;
       padding: 0 10px 0 0;
       @include headline-font;
-    }
-
-    &:last-child {
-      margin-bottom: 0;
     }
   }
 }
@@ -78,10 +66,9 @@ h4,
 h5,
 h6 {
   @include headline-font;
-  margin: 0 0 $emHeadlineBottomMargin;
   font-size: 1em;
-
-  &:last-child {
-    margin-bottom: 0;
-  }
+  margin: 0;
+  @include sensible-bottom-margin(1em);
 }
+
+

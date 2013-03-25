@@ -17,8 +17,7 @@
 <link rel="stylesheet" href="/css/compiled/theme/default.css">
 
 <script src="js/lib/modernizr-2.6.2.min.js"></script>
-<%# <script src="//use.typekit.net/vxj8kyp.js"></script> %>
-<script src="//use.typekit.net/nxg5gzm.js"></script>
+<script src="//use.typekit.net/nxg5gzm.js"></script><%# vxj8kyp %>
 <script>
   try{
     Typekit.load();
@@ -38,10 +37,8 @@
     <%= render_partial :masthead %>
   <% end %>
 
-  <div id="inner" class="constrain">
-    <div id="main" role="main">
-      <%= header_tag %>
-
+  <div id="inner">
+    <div id="main" role="main" class="constrain">
       <%= yield %>
     </div>
 

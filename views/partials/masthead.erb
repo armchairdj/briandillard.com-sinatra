@@ -1,9 +1,11 @@
 <div id="masthead">
-  <nav>
-    <div class="tagline constrain">
-      <p>console.log<span>('brian')</span>;</p>
+  <div class="tagline">
+    <p>console.log<span>(<span>'brian'</span>)</span>;</p>
+  </div>
 
-      <ul class="piped">
+  <nav>
+    <div class="constrain">
+      <ul>
         <li><a href="/">home</a></li>
         <li><a href="/resume">resume</a></li>
         <li><a href="/contact">contact</a></li>
@@ -12,9 +14,11 @@
   </nav>
 
   <% unless @page.suppressed? :logline %>
-    <header class="constrain">
-      <h1>Brian J. Dillard</h1>
-      <h2>Chicago software craftsman</h2>
+    <header>
+      <div class="constrain">
+        <h1>Brian J. Dillard</h1>
+        <h2>Chicago software craftsman</h2>
+      </div>
     </header>
   <% end %>
 </div>

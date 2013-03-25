@@ -3,4 +3,8 @@ $viewport: 320px;
 body {
   font-size: 24px;
   @include container-setup($viewport, $pxContainerPadSmall);
+  @include tagline-setup(24px, true);
+  @include global-nav-setup(16px, true);
+  @include global-header-setup(20px, true);
+  @include footer-setup(16px, true);
 }

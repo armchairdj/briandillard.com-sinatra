@@ -1,6 +1,6 @@
 <article>
   <section>
-    <dl class="navigational">
+    <dl>
       <% @links.each_pair do |name, items| %>
         <% links = items.delete_if { |i| i["active"] == false } %>
 

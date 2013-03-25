@@ -3,54 +3,13 @@ $hexBodyText: #ddd;
 $hexHeadlineText: #fff;
 $hexGlobalHighlight: #c2f9ff;
 
-/* Basic, non-semantic colors */
-
-$white: #fff;
-$lightGrey: #ccc;
-$mediumGrey: #999;
-$darkGrey: #666;
-$almostBlack: #222;
-$black: #000;
-$gunMetal: #e5e5e5;
-
 /* Body colors */
 
-/* Module backgrounds */
+/* Backgrounds */
 
-$hexMastheadBg0: #fff;
-$hexMastheadBg1: #fff;
-
-/* Error backgrounds, borders and text */
-
-$errorBg: #faf2f5;
-$errorText: #cc1452;
-$errorInputText: #333;
-$errorBorder: #e6b8c7;
-
-/* Link colors */
-
-$hexLinkPrimary: $hexGlobalHighlight;
-$hexLinkPrimaryHover: $hexGlobalHighlight;
-$hexLinkSecondary: $hexGlobalHighlight;
-$hexLinkSecondaryHover: $hexGlobalHighlight;
+/* Links */
 
 /* Inputs */
 
-$inputBorder: #e0e0e0;
-$searchBorder: #a1cae4;
-
 /* Buttons */
 
-$buttonPrimary: #6f99a2;
-$buttonPrimaryHvr: #407480;
-$buttonPrimaryGr: linear-gradient(bottom, $buttonPrimaryHvr, $buttonPrimary);
-
-$buttonSecondary: #3b88b0;
-$buttonSecondaryHvr: #44a1d1;
-$buttonSecondaryGr: linear-gradient(bottom, #32789b, $buttonSecondary);
-$buttonSecondaryHvrGr: linear-gradient(bottom, #3889b2, $buttonSecondaryHvr);
-
-$buttonTertiary: #ccc;
-$buttonTertiaryHvr: #dcdcdc;
-$buttonTertiaryGr: linear-gradient(bottom, #bcbcbc, $buttonTertiary);
-$buttonTertiaryHvrGr: linear-gradient(bottom, #cbcbcb, $buttonTertiaryHvr);
